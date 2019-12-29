@@ -78,12 +78,12 @@ Wire Wire Line
 $Comp
 L Symbols:RESET_SWITCH SW1
 U 1 1 5D67B3A7
-P 2200 3600
-F 0 "SW1" H 2200 3825 50  0000 C CNN
-F 1 "RESET_SWITCH" H 2200 3734 50  0000 C CNN
-F 2 "footprints:PTS_647_SM38_SMTR2_LFS" H 2200 3600 50  0001 C CNN
-F 3 "" H 2200 3600 50  0001 C CNN
-	1    2200 3600
+P 2150 3600
+F 0 "SW1" H 2150 3825 50  0000 C CNN
+F 1 "RESET_SWITCH" H 2150 3734 50  0000 C CNN
+F 2 "footprints:PTS_647_SM38_SMTR2_LFS" H 2150 3600 50  0001 C CNN
+F 3 "" H 2150 3600 50  0001 C CNN
+	1    2150 3600
 	1    0    0    -1  
 $EndComp
 Text Label 1600 6500 0    50   ~ 0
@@ -107,7 +107,7 @@ Wire Wire Line
 Wire Wire Line
 	1300 6500 1600 6500
 Connection ~ 1300 6500
-Text Label 1850 3600 2    50   ~ 0
+Text Label 1800 3750 2    50   ~ 0
 GND
 Wire Notes Line
 	500  4900 2800 4900
@@ -182,8 +182,8 @@ F1 "MCU.sch" 50
 $EndSheet
 Text GLabel 1300 3400 2    50   Input ~ 0
 GND
-Text GLabel 7700 2700 2    50   Input ~ 0
-D4
+Text GLabel 2350 4250 2    50   Input ~ 0
+D3
 Text GLabel 2950 6300 2    50   Input ~ 0
 D6
 Text GLabel 2950 5800 2    50   Input ~ 0
@@ -309,17 +309,52 @@ Wire Wire Line
 	1100 4300 1000 4300
 Wire Wire Line
 	1000 4650 1100 4650
-NoConn ~ 7700 2700
 Wire Wire Line
 	2500 3300 2500 3600
 Wire Wire Line
-	2500 3600 2450 3600
+	2500 3600 2400 3600
 Wire Wire Line
-	1850 3600 1950 3600
+	1800 3750 1900 3750
 Wire Wire Line
-	1950 3600 1950 3750
-Connection ~ 1950 3600
+	1900 3600 1800 3600
 Wire Wire Line
-	2450 3750 2450 3600
-Connection ~ 2450 3600
+	1800 3600 1800 3300
+Wire Wire Line
+	1800 3300 2500 3300
+Wire Wire Line
+	2400 3850 2400 3750
+Wire Wire Line
+	1800 3850 1800 3750
+Wire Wire Line
+	1800 3850 2400 3850
+$Comp
+L Connector:Conn_01x01_Female J-BTN1
+U 1 1 5E0A8DE3
+P 1750 4250
+F 0 "J-BTN1" H 1642 4025 50  0000 C CNN
+F 1 "Conn_01x01_Female" H 1642 4116 50  0000 C CNN
+F 2 "footprints:SolderPad" H 1750 4250 50  0001 C CNN
+F 3 "~" H 1750 4250 50  0001 C CNN
+	1    1750 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 4250 2350 4250
+Text Label 2050 4250 0    50   ~ 0
+BTN
+$Comp
+L Connector:Conn_01x01_Female J-GND2
+U 1 1 5E097C58
+P 800 3700
+F 0 "J-GND2" H 692 3475 50  0000 C CNN
+F 1 "Conn_01x01_Female" H 692 3566 50  0000 C CNN
+F 2 "footprints:SolderPad" H 800 3700 50  0001 C CNN
+F 3 "~" H 800 3700 50  0001 C CNN
+	1    800  3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1000 3700 1300 3700
+Wire Wire Line
+	1300 3700 1300 3400
 $EndSCHEMATC
