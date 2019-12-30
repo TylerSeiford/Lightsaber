@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:HW-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -375,32 +376,6 @@ Text Label 7000 1000 2    50   ~ 0
 UVCC
 Wire Wire Line
 	7000 1000 7100 1000
-Wire Wire Line
-	8550 1600 8650 1600
-Text Label 8250 2500 2    50   ~ 0
-GND
-Text GLabel 7400 2000 0    50   Input ~ 0
-RAW
-Wire Wire Line
-	7400 2000 7550 2000
-$Comp
-L Device:C C1
-U 1 1 5DFE9A37
-P 7550 2250
-F 0 "C1" V 7298 2250 50  0000 C CNN
-F 1 "10uF" V 7389 2250 50  0000 C CNN
-F 2 "footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7588 2100 50  0001 C CNN
-F 3 "~" H 7550 2250 50  0001 C CNN
-	1    7550 2250
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	7550 2100 7550 2000
-Connection ~ 7550 2000
-Wire Wire Line
-	7550 2400 7550 2500
-Wire Wire Line
-	7550 2500 7850 2500
 $Comp
 L Device:C C4
 U 1 1 5DFF3341
@@ -410,17 +385,6 @@ F 1 "1uF" V 3839 3250 50  0000 C CNN
 F 2 "footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4038 3100 50  0001 C CNN
 F 3 "~" H 4000 3250 50  0001 C CNN
 	1    4000 3250
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5DFF4101
-P 8650 2250
-F 0 "C2" V 8398 2250 50  0000 C CNN
-F 1 "10uF" V 8489 2250 50  0000 C CNN
-F 2 "footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8688 2100 50  0001 C CNN
-F 3 "~" H 8650 2250 50  0001 C CNN
-	1    8650 2250
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -434,15 +398,8 @@ F 3 "~" H 4500 3250 50  0001 C CNN
 	1    4500 3250
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	8650 2100 8650 1700
-Connection ~ 8650 1600
-Wire Wire Line
-	8650 2400 8650 2500
-Text Label 8650 1000 2    50   ~ 0
+Text Label 8550 1000 2    50   ~ 0
 VCC
-Wire Wire Line
-	8650 1000 8650 1600
 $Comp
 L MCU_Microchip_ATmega:ATmega32U4-AU U1
 U 1 1 5DEEFC68
@@ -477,31 +434,6 @@ Wire Wire Line
 Wire Wire Line
 	2700 2000 2300 2000
 Connection ~ 2300 2000
-Wire Wire Line
-	7550 1600 7550 2000
-$Comp
-L Symbols:SPX1117 U2
-U 1 1 5DF42BC0
-P 8200 1550
-F 0 "U2" H 8200 1725 50  0000 C CNN
-F 1 "SPX1117" H 8200 1634 50  0000 C CNN
-F 2 "footprints:SOT-223" H 8200 1550 50  0001 C CNN
-F 3 "" H 8200 1550 50  0001 C CNN
-	1    8200 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7850 1600 7550 1600
-Wire Wire Line
-	7850 1700 7850 2500
-Connection ~ 7850 2500
-Wire Wire Line
-	7850 2500 8650 2500
-Wire Wire Line
-	8550 1700 8650 1700
-Connection ~ 8650 1700
-Wire Wire Line
-	8650 1700 8650 1600
 Text Label 5000 3500 2    50   ~ 0
 GND
 Text Label 5000 3000 2    50   ~ 0
@@ -532,6 +464,6 @@ Text Label 1700 1200 0    50   ~ 0
 D+USB
 Text Label 1700 1300 0    50   ~ 0
 D-USB
-Text GLabel 8650 1100 2    50   Input ~ 0
+Text GLabel 8650 1000 2    50   Input ~ 0
 VCC
 $EndSCHEMATC
