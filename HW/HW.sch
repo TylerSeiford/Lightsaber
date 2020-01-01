@@ -34,8 +34,6 @@ Text Label 2500 5800 0    50   ~ 0
 G-5V
 Text Label 2500 6300 0    50   ~ 0
 B-5V
-Text Label 2500 3500 0    50   ~ 0
-RESET
 $Comp
 L Device:Q_NMOS_GDSD Q-R1
 U 1 1 5D6323FE
@@ -75,17 +73,6 @@ Wire Wire Line
 	1300 6000 1200 6000
 Wire Wire Line
 	1300 5500 1200 5500
-$Comp
-L Symbols:RESET_SWITCH SW1
-U 1 1 5D67B3A7
-P 2150 3600
-F 0 "SW1" H 2150 3825 50  0000 C CNN
-F 1 "RESET_SWITCH" H 2150 3734 50  0000 C CNN
-F 2 "footprints:PTS_647_SM38_SMTR2_LFS" H 2150 3600 50  0001 C CNN
-F 3 "" H 2150 3600 50  0001 C CNN
-	1    2150 3600
-	1    0    0    -1  
-$EndComp
 Text Label 1600 6500 0    50   ~ 0
 B-12V
 Text Label 1600 6000 0    50   ~ 0
@@ -107,8 +94,6 @@ Wire Wire Line
 Wire Wire Line
 	1300 6500 1600 6500
 Connection ~ 1300 6500
-Text Label 1800 3750 2    50   ~ 0
-GND
 Wire Notes Line
 	500  4900 2800 4900
 Wire Notes Line
@@ -190,8 +175,6 @@ Text GLabel 2950 5800 2    50   Input ~ 0
 D9
 Text GLabel 2950 5300 2    50   Input ~ 0
 D13
-Text GLabel 2500 3300 2    50   Input ~ 0
-RESET
 Wire Wire Line
 	1000 3400 1300 3400
 Wire Wire Line
@@ -242,11 +225,11 @@ NoConn ~ 7700 3900
 NoConn ~ 7700 4000
 NoConn ~ 7700 4100
 NoConn ~ 7700 4200
-Text GLabel 1300 3100 2    50   Input ~ 0
+Text GLabel 2300 3400 2    50   Input ~ 0
 RAW
 Wire Wire Line
-	1000 3100 1300 3100
-Text Label 1100 3100 0    50   ~ 0
+	2000 3400 2300 3400
+Text Label 2100 3400 0    50   ~ 0
 RAW
 $Comp
 L Connector:Conn_01x01_Female J-GND1
@@ -262,12 +245,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Female J-RAW1
 U 1 1 5E0AB1E5
-P 800 3100
-F 0 "J-RAW1" H 692 2875 50  0000 C CNN
-F 1 "Conn_01x01_Female" H 692 2966 50  0000 C CNN
-F 2 "footprints:SolderPad" H 800 3100 50  0001 C CNN
-F 3 "~" H 800 3100 50  0001 C CNN
-	1    800  3100
+P 1800 3400
+F 0 "J-RAW1" H 1692 3175 50  0000 C CNN
+F 1 "Conn_01x01_Female" H 1692 3266 50  0000 C CNN
+F 2 "footprints:SolderPad" H 1800 3400 50  0001 C CNN
+F 3 "~" H 1800 3400 50  0001 C CNN
+	1    1800 3400
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -309,24 +292,6 @@ Wire Wire Line
 	1100 4300 1000 4300
 Wire Wire Line
 	1000 4650 1100 4650
-Wire Wire Line
-	2500 3300 2500 3600
-Wire Wire Line
-	2500 3600 2400 3600
-Wire Wire Line
-	1800 3750 1900 3750
-Wire Wire Line
-	1900 3600 1800 3600
-Wire Wire Line
-	1800 3600 1800 3300
-Wire Wire Line
-	1800 3300 2500 3300
-Wire Wire Line
-	2400 3850 2400 3750
-Wire Wire Line
-	1800 3850 1800 3750
-Wire Wire Line
-	1800 3850 2400 3850
 $Comp
 L Connector:Conn_01x01_Female J-BTN1
 U 1 1 5E0A8DE3
@@ -357,4 +322,19 @@ Wire Wire Line
 	1000 3700 1300 3700
 Wire Wire Line
 	1300 3700 1300 3400
+$Comp
+L Connector:Conn_01x01_Female J-RAW2
+U 1 1 5E10894E
+P 1800 3700
+F 0 "J-RAW2" H 1692 3475 50  0000 C CNN
+F 1 "Conn_01x01_Female" H 1692 3566 50  0000 C CNN
+F 2 "footprints:SolderPad" H 1800 3700 50  0001 C CNN
+F 3 "~" H 1800 3700 50  0001 C CNN
+	1    1800 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 3700 2300 3700
+Wire Wire Line
+	2300 3700 2300 3400
 $EndSCHEMATC

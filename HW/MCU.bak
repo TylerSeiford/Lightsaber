@@ -79,28 +79,9 @@ Text Label 3000 3500 1    50   ~ 0
 VCC
 Text Label 3100 3500 1    50   ~ 0
 VCC
-$Comp
-L Device:R R1
-U 1 1 5E13DA48
-P 1500 3750
-F 0 "R1" H 1570 3796 50  0000 L CNN
-F 1 "10k" H 1570 3705 50  0000 L CNN
-F 2 "footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1430 3750 50  0001 C CNN
-F 3 "~" H 1500 3750 50  0001 C CNN
-	1    1500 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 4000 1500 4000
-Wire Wire Line
-	1500 4000 1500 3900
-Wire Wire Line
-	1500 3600 1500 3500
 Wire Wire Line
 	1500 5900 1500 6000
 Text Label 2000 4000 2    50   ~ 0
-RESET
-Text GLabel 1500 4000 0    50   Input ~ 0
 RESET
 $Comp
 L Device:C C5
@@ -195,8 +176,6 @@ Text Label 2900 7500 1    50   ~ 0
 GND
 Text Label 1000 6000 3    50   ~ 0
 GND
-Text Label 1500 3500 0    50   ~ 0
-VCC
 Wire Wire Line
 	3600 4000 3700 4000
 Text GLabel 4000 4100 2    50   Input ~ 0
@@ -535,4 +514,6 @@ Text Label 1700 1300 0    50   ~ 0
 D-USB
 Text GLabel 8650 1100 2    50   Input ~ 0
 VCC
+Wire Wire Line
+	2000 4000 2400 4000
 $EndSCHEMATC
