@@ -162,8 +162,8 @@ L Device:C C2
 U 1 1 5E0B8ED6
 P 2500 2250
 F 0 "C2" H 2615 2296 50  0000 L CNN
-F 1 "10uF" H 2615 2205 50  0000 L CNN
-F 2 "footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2538 2100 50  0001 C CNN
+F 1 "100uF" H 2615 2205 50  0000 L CNN
+F 2 "footprints:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2538 2100 50  0001 C CNN
 F 3 "~" H 2500 2250 50  0001 C CNN
 	1    2500 2250
 	1    0    0    -1  
@@ -218,4 +218,25 @@ Wire Wire Line
 Connection ~ 2000 2000
 Text Label 1500 2000 2    50   ~ 0
 UVCC
+$Comp
+L Device:C C3
+U 1 1 5E0D1BBE
+P 3000 2250
+F 0 "C3" H 3115 2296 50  0000 L CNN
+F 1 "100uF" H 3115 2205 50  0000 L CNN
+F 2 "footprints:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3038 2100 50  0001 C CNN
+F 3 "~" H 3000 2250 50  0001 C CNN
+	1    3000 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2400 3000 2500
+Wire Wire Line
+	3000 2500 2500 2500
+Connection ~ 2500 2500
+Wire Wire Line
+	3000 2100 3000 2000
+Wire Wire Line
+	3000 2000 2500 2000
+Connection ~ 2500 2000
 $EndSCHEMATC
