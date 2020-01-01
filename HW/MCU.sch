@@ -79,28 +79,9 @@ Text Label 3000 3500 1    50   ~ 0
 VCC
 Text Label 3100 3500 1    50   ~ 0
 VCC
-$Comp
-L Device:R R1
-U 1 1 5E13DA48
-P 1500 3750
-F 0 "R1" H 1570 3796 50  0000 L CNN
-F 1 "10k" H 1570 3705 50  0000 L CNN
-F 2 "footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1430 3750 50  0001 C CNN
-F 3 "~" H 1500 3750 50  0001 C CNN
-	1    1500 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 4000 1500 4000
-Wire Wire Line
-	1500 4000 1500 3900
-Wire Wire Line
-	1500 3600 1500 3500
 Wire Wire Line
 	1500 5900 1500 6000
 Text Label 2000 4000 2    50   ~ 0
-RESET
-Text GLabel 1500 4000 0    50   Input ~ 0
 RESET
 $Comp
 L Device:C C5
@@ -195,8 +176,6 @@ Text Label 2900 7500 1    50   ~ 0
 GND
 Text Label 1000 6000 3    50   ~ 0
 GND
-Text Label 1500 3500 0    50   ~ 0
-VCC
 Wire Wire Line
 	3600 4000 3700 4000
 Text GLabel 4000 4100 2    50   Input ~ 0
@@ -362,21 +341,6 @@ Wire Wire Line
 Wire Wire Line
 	2400 1300 2500 1300
 $Comp
-L Device:Polyfuse F1
-U 1 1 5DFB9580
-P 7250 1000
-F 0 "F1" V 7025 1000 50  0000 C CNN
-F 1 "Polyfuse" V 7116 1000 50  0000 C CNN
-F 2 "footprints:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7300 800 50  0001 L CNN
-F 3 "~" H 7250 1000 50  0001 C CNN
-	1    7250 1000
-	0    1    1    0   
-$EndComp
-Text Label 7000 1000 2    50   ~ 0
-UVCC
-Wire Wire Line
-	7000 1000 7100 1000
-$Comp
 L Device:C C4
 U 1 1 5DFF3341
 P 4000 3250
@@ -398,8 +362,6 @@ F 3 "~" H 4500 3250 50  0001 C CNN
 	1    4500 3250
 	-1   0    0    1   
 $EndComp
-Text Label 8550 1000 2    50   ~ 0
-VCC
 $Comp
 L MCU_Microchip_ATmega:ATmega32U4-AU U1
 U 1 1 5DEEFC68
@@ -458,12 +420,14 @@ Wire Wire Line
 	4500 3500 4000 3500
 NoConn ~ 3700 5700
 NoConn ~ 3700 4000
-Wire Wire Line
-	7400 1000 8650 1000
 Text Label 1700 1200 0    50   ~ 0
 D+USB
 Text Label 1700 1300 0    50   ~ 0
 D-USB
-Text GLabel 8650 1000 2    50   Input ~ 0
-VCC
+Text GLabel 2000 750  2    50   Input ~ 0
+UVCC
+Wire Wire Line
+	2000 1000 2000 750 
+Wire Wire Line
+	2400 4000 2000 4000
 $EndSCHEMATC
