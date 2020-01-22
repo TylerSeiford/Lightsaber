@@ -191,8 +191,6 @@ MOSI
 Text Label 3700 4300 0    50   ~ 0
 MISO
 Wire Wire Line
-	3600 4100 4000 4100
-Wire Wire Line
 	4000 4200 3600 4200
 Wire Wire Line
 	3600 4300 4000 4300
@@ -428,6 +426,58 @@ Text GLabel 2000 750  2    50   Input ~ 0
 UVCC
 Wire Wire Line
 	2000 1000 2000 750 
+$Comp
+L Connector:TestPoint TP-RST1
+U 1 1 5E2291D1
+P 1500 4000
+F 0 "TP-RST1" V 1695 4072 50  0000 C CNN
+F 1 "TestPoint" V 1604 4072 50  0000 C CNN
+F 2 "footprints:Program-Pad" H 1700 4000 50  0001 C CNN
+F 3 "~" H 1700 4000 50  0001 C CNN
+	1    1500 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP-SCK1
+U 1 1 5E22AC5B
+P 4500 4000
+F 0 "TP-SCK1" V 4454 4188 50  0000 L CNN
+F 1 "TestPoint" V 4545 4188 50  0000 L CNN
+F 2 "footprints:Program-Pad" H 4700 4000 50  0001 C CNN
+F 3 "~" H 4700 4000 50  0001 C CNN
+	1    4500 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP-MOSI1
+U 1 1 5E22CBF0
+P 4500 4200
+F 0 "TP-MOSI1" V 4454 4388 50  0000 L CNN
+F 1 "TestPoint" V 4545 4388 50  0000 L CNN
+F 2 "footprints:Program-Pad" H 4700 4200 50  0001 C CNN
+F 3 "~" H 4700 4200 50  0001 C CNN
+	1    4500 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP-MISO1
+U 1 1 5E22CEF6
+P 4500 4400
+F 0 "TP-MISO1" V 4454 4588 50  0000 L CNN
+F 1 "TestPoint" V 4545 4588 50  0000 L CNN
+F 2 "footprints:Program-Pad" H 4700 4400 50  0001 C CNN
+F 3 "~" H 4700 4400 50  0001 C CNN
+	1    4500 4400
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	2400 4000 2000 4000
+	3600 4100 4000 4100
+Text Label 4500 4000 2    50   ~ 0
+SCK
+Text Label 4500 4200 2    50   ~ 0
+MOSI
+Text Label 4500 4400 2    50   ~ 0
+MISO
+Wire Wire Line
+	1500 4000 2400 4000
 $EndSCHEMATC
