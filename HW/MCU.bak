@@ -14,39 +14,39 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 4000 6900 2    50   Input ~ 0
+Text GLabel 4500 6900 2    50   Input ~ 0
 AI0
-Text GLabel 4000 6800 2    50   Input ~ 0
+Text GLabel 4500 6800 2    50   Input ~ 0
 AI1
-Text GLabel 4000 6700 2    50   Input ~ 0
+Text GLabel 4500 6700 2    50   Input ~ 0
 AI2
-Text GLabel 4000 6600 2    50   Input ~ 0
+Text GLabel 4500 6600 2    50   Input ~ 0
 AI3
-Text GLabel 4000 6500 2    50   Input ~ 0
+Text GLabel 4500 6500 2    50   Input ~ 0
 AI4
-Text GLabel 4000 6400 2    50   Input ~ 0
+Text GLabel 4500 6400 2    50   Input ~ 0
 AI5
 Wire Wire Line
-	3600 6900 4000 6900
+	3600 6900 4500 6900
 Wire Wire Line
-	3600 6800 4000 6800
+	3600 6800 4500 6800
 Wire Wire Line
-	3600 6700 4000 6700
+	3600 6700 4500 6700
 Wire Wire Line
-	3600 6600 4000 6600
+	3600 6600 4500 6600
 Wire Wire Line
-	3600 6500 4000 6500
+	3600 6500 4500 6500
 Wire Wire Line
-	3600 6400 4000 6400
+	3600 6400 4500 6400
 Text Label 2000 5000 2    50   ~ 0
 D+
 Text Label 2000 5100 2    50   ~ 0
 D-
 $Comp
-L Device:C C5
+L Device:C C6
 U 1 1 5E135329
 P 1500 5750
-F 0 "C5" H 1615 5796 50  0000 L CNN
+F 0 "C6" H 1615 5796 50  0000 L CNN
 F 1 "1uF" H 1615 5705 50  0000 L CNN
 F 2 "footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1538 5600 50  0001 C CNN
 F 3 "~" H 1500 5750 50  0001 C CNN
@@ -76,18 +76,18 @@ UVCC
 Text Label 2900 3500 1    50   ~ 0
 UVCC
 Text Label 3000 3500 1    50   ~ 0
-VCC
+MVCC
 Text Label 3100 3500 1    50   ~ 0
-VCC
+MVCC
 Wire Wire Line
-	1500 5900 1500 6000
+	1500 5900 1500 6500
 Text Label 2000 4000 2    50   ~ 0
 RESET
 $Comp
-L Device:C C7
+L Device:C C4
 U 1 1 5E140D13
 P 1000 5750
-F 0 "C7" H 1115 5796 50  0000 L CNN
+F 0 "C4" H 1115 5796 50  0000 L CNN
 F 1 "0.1uF" H 1115 5705 50  0000 L CNN
 F 2 "footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1038 5600 50  0001 C CNN
 F 3 "~" H 1000 5750 50  0001 C CNN
@@ -95,71 +95,71 @@ F 3 "~" H 1000 5750 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 5900 1000 6000
+	1000 5900 1000 6500
 Wire Wire Line
-	1000 6000 1500 6000
+	1000 6500 1500 6500
 Wire Wire Line
 	1000 5600 1000 4600
 Wire Wire Line
 	1000 4600 2400 4600
 Text Label 2000 4600 2    50   ~ 0
 AREF
-Text GLabel 4000 5400 2    50   Input ~ 0
+Text GLabel 4500 5400 2    50   Input ~ 0
 D0
-Text GLabel 4000 5500 2    50   Input ~ 0
+Text GLabel 4500 5500 2    50   Input ~ 0
 D1
-Text GLabel 4000 5300 2    50   Input ~ 0
+Text GLabel 4500 5300 2    50   Input ~ 0
 D2
-Text GLabel 4000 5200 2    50   Input ~ 0
+Text GLabel 4500 5200 2    50   Input ~ 0
 D3
-Text GLabel 4000 5600 2    50   Input ~ 0
+Text GLabel 4500 5600 2    50   Input ~ 0
 D4
-Text GLabel 4000 4900 2    50   Input ~ 0
+Text GLabel 4500 4900 2    50   Input ~ 0
 D5
-Text GLabel 4000 5900 2    50   Input ~ 0
+Text GLabel 4500 5900 2    50   Input ~ 0
 D6
 Wire Wire Line
-	3600 4900 4000 4900
+	3600 4900 4500 4900
 Wire Wire Line
-	3600 5000 4000 5000
+	3600 5000 4500 5000
 Wire Wire Line
-	4000 5300 3600 5300
+	4500 5300 3600 5300
 Wire Wire Line
-	3600 5200 4000 5200
+	3600 5200 4500 5200
 Wire Wire Line
-	4000 5400 3600 5400
+	4500 5400 3600 5400
 Wire Wire Line
-	3600 5500 4000 5500
+	3600 5500 4500 5500
 Wire Wire Line
-	4000 5600 3600 5600
-Text GLabel 4000 6200 2    50   Input ~ 0
+	4500 5600 3600 5600
+Text GLabel 4500 6200 2    50   Input ~ 0
 D7
-Text GLabel 4000 4400 2    50   Input ~ 0
+Text GLabel 4500 4400 2    50   Input ~ 0
 D8
-Text GLabel 4000 4500 2    50   Input ~ 0
+Text GLabel 4500 4500 2    50   Input ~ 0
 D9
-Text GLabel 4000 4600 2    50   Input ~ 0
+Text GLabel 4500 4600 2    50   Input ~ 0
 D10
-Text GLabel 4000 4700 2    50   Input ~ 0
+Text GLabel 4500 4700 2    50   Input ~ 0
 D11
-Text GLabel 4000 5800 2    50   Input ~ 0
+Text GLabel 4500 5800 2    50   Input ~ 0
 D12
-Text GLabel 4000 5000 2    50   Input ~ 0
+Text GLabel 4500 5000 2    50   Input ~ 0
 D13
 Wire Wire Line
-	3600 4400 4000 4400
+	3600 4400 4500 4400
 Wire Wire Line
-	4000 4500 3600 4500
+	4500 4500 3600 4500
 Wire Wire Line
-	3600 4600 4000 4600
+	3600 4600 4500 4600
 Wire Wire Line
-	4000 4700 3600 4700
+	4500 4700 3600 4700
 Wire Wire Line
-	3600 5800 4000 5800
+	3600 5800 4500 5800
 Wire Wire Line
-	4000 5900 3600 5900
+	4500 5900 3600 5900
 Wire Wire Line
-	3600 6200 4000 6200
+	3600 6200 4500 6200
 Wire Wire Line
 	3000 7300 3000 7500
 Wire Wire Line
@@ -168,21 +168,21 @@ Wire Wire Line
 	2900 7500 2900 7300
 Text GLabel 3000 7500 2    50   Input ~ 0
 GND
-Text GLabel 3100 3500 2    50   Input ~ 0
-VCC
+Text GLabel 2000 7000 2    50   Input ~ 0
+MVCC
 Wire Wire Line
-	3700 5700 3600 5700
+	4500 5700 3600 5700
 Text Label 2900 7500 1    50   ~ 0
 GND
-Text Label 1000 6000 3    50   ~ 0
+Text Label 1000 6500 0    50   ~ 0
 GND
 Wire Wire Line
-	3600 4000 3700 4000
-Text GLabel 4000 4100 2    50   Input ~ 0
+	3600 4000 4500 4000
+Text GLabel 4500 4100 2    50   Input ~ 0
 D15
-Text GLabel 4000 4200 2    50   Input ~ 0
+Text GLabel 4500 4200 2    50   Input ~ 0
 D16
-Text GLabel 4000 4300 2    50   Input ~ 0
+Text GLabel 4500 4300 2    50   Input ~ 0
 D14
 Text Label 3700 4100 0    50   ~ 0
 SCK
@@ -191,9 +191,9 @@ MOSI
 Text Label 3700 4300 0    50   ~ 0
 MISO
 Wire Wire Line
-	4000 4200 3600 4200
+	4500 4200 3600 4200
 Wire Wire Line
-	3600 4300 4000 4300
+	3600 4300 4500 4300
 Text Label 3700 4400 0    50   ~ 0
 D8
 Text Label 3700 4500 0    50   ~ 0
@@ -231,10 +231,10 @@ GND
 Wire Wire Line
 	3600 6100 3700 6100
 $Comp
-L Device:C C9
+L Device:C C1
 U 1 1 5DF85536
 P 1750 2500
-F 0 "C9" V 1498 2500 50  0000 C CNN
+F 0 "C1" V 1498 2500 50  0000 C CNN
 F 1 "22pF" V 1589 2500 50  0000 C CNN
 F 2 "footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1788 2350 50  0001 C CNN
 F 3 "~" H 1750 2500 50  0001 C CNN
@@ -242,10 +242,10 @@ F 3 "~" H 1750 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C8
+L Device:C C2
 U 1 1 5DF87109
 P 1750 3000
-F 0 "C8" V 1498 3000 50  0000 C CNN
+F 0 "C2" V 1498 3000 50  0000 C CNN
 F 1 "22pF" V 1589 3000 50  0000 C CNN
 F 2 "footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1788 2850 50  0001 C CNN
 F 3 "~" H 1750 3000 50  0001 C CNN
@@ -268,9 +268,9 @@ Wire Wire Line
 	1500 3000 1600 3000
 Text Label 1500 2500 2    50   ~ 0
 GND
-Text Label 2500 2500 1    50   ~ 0
+Text Label 2000 2500 0    50   ~ 0
 XTAL1
-Text Label 2500 3000 2    50   ~ 0
+Text Label 2000 3000 0    50   ~ 0
 XTAL2
 Text Label 2000 4400 2    50   ~ 0
 XTAL2
@@ -309,10 +309,10 @@ D-
 Text Label 2000 1000 2    50   ~ 0
 UVCC
 $Comp
-L Device:R R2
+L Device:R R1
 U 1 1 5DFA8690
 P 2250 1200
-F 0 "R2" V 2043 1200 50  0000 C CNN
+F 0 "R1" V 2043 1200 50  0000 C CNN
 F 1 "22" V 2134 1200 50  0000 C CNN
 F 2 "footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2180 1200 50  0001 C CNN
 F 3 "~" H 2250 1200 50  0001 C CNN
@@ -320,10 +320,10 @@ F 3 "~" H 2250 1200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R3
+L Device:R R2
 U 1 1 5DFA9136
 P 2250 1300
-F 0 "R3" V 2150 1300 50  0000 C CNN
+F 0 "R2" V 2150 1300 50  0000 C CNN
 F 1 "22" V 2050 1300 50  0000 C CNN
 F 2 "footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2180 1300 50  0001 C CNN
 F 3 "~" H 2250 1300 50  0001 C CNN
@@ -339,25 +339,25 @@ Wire Wire Line
 Wire Wire Line
 	2400 1300 2500 1300
 $Comp
-L Device:C C4
+L Device:C C5
 U 1 1 5DFF3341
-P 4000 3250
-F 0 "C4" V 3748 3250 50  0000 C CNN
-F 1 "1uF" V 3839 3250 50  0000 C CNN
-F 2 "footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4038 3100 50  0001 C CNN
-F 3 "~" H 4000 3250 50  0001 C CNN
-	1    4000 3250
+P 1000 7250
+F 0 "C5" V 748 7250 50  0000 C CNN
+F 1 "1uF" V 839 7250 50  0000 C CNN
+F 2 "footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1038 7100 50  0001 C CNN
+F 3 "~" H 1000 7250 50  0001 C CNN
+	1    1000 7250
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C6
+L Device:C C3
 U 1 1 5DFF2A8F
-P 4500 3250
-F 0 "C6" V 4248 3250 50  0000 C CNN
-F 1 "0.1uF" V 4339 3250 50  0000 C CNN
-F 2 "footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4538 3100 50  0001 C CNN
-F 3 "~" H 4500 3250 50  0001 C CNN
-	1    4500 3250
+P 1500 7250
+F 0 "C3" V 1248 7250 50  0000 C CNN
+F 1 "0.1uF" V 1339 7250 50  0000 C CNN
+F 2 "footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1538 7100 50  0001 C CNN
+F 3 "~" H 1500 7250 50  0001 C CNN
+	1    1500 7250
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -394,30 +394,30 @@ Wire Wire Line
 Wire Wire Line
 	2700 2000 2300 2000
 Connection ~ 2300 2000
-Text Label 5000 3500 2    50   ~ 0
+Text Label 2000 7500 2    50   ~ 0
 GND
-Text Label 5000 3000 2    50   ~ 0
-VCC
+Text Label 2000 7000 2    50   ~ 0
+MVCC
 Wire Wire Line
-	5000 3000 4500 3000
+	2000 7000 1500 7000
 Wire Wire Line
-	4500 3000 4500 3100
+	1500 7000 1500 7100
 Wire Wire Line
-	5000 3500 4500 3500
+	2000 7500 1500 7500
 Wire Wire Line
-	4000 3500 4000 3400
+	1000 7500 1000 7400
 Wire Wire Line
-	4000 3100 4000 3000
+	1000 7100 1000 7000
 Wire Wire Line
-	4000 3000 4500 3000
-Connection ~ 4500 3000
+	1000 7000 1500 7000
+Connection ~ 1500 7000
 Wire Wire Line
-	4500 3400 4500 3500
-Connection ~ 4500 3500
+	1500 7400 1500 7500
+Connection ~ 1500 7500
 Wire Wire Line
-	4500 3500 4000 3500
-NoConn ~ 3700 5700
-NoConn ~ 3700 4000
+	1500 7500 1000 7500
+NoConn ~ 4500 5700
+NoConn ~ 4500 4000
 Text Label 1700 1200 0    50   ~ 0
 D+USB
 Text Label 1700 1300 0    50   ~ 0
@@ -429,55 +429,57 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP-RST1
 U 1 1 5E2291D1
-P 1500 4000
-F 0 "TP-RST1" V 1695 4072 50  0000 C CNN
-F 1 "TestPoint" V 1604 4072 50  0000 C CNN
-F 2 "" H 1700 4000 50  0001 C CNN
-F 3 "~" H 1700 4000 50  0001 C CNN
-	1    1500 4000
-	0    -1   -1   0   
+P 5000 7500
+F 0 "TP-RST1" V 4950 7700 50  0000 L CNN
+F 1 "TestPoint" V 5050 7700 50  0000 L CNN
+F 2 "footprints:Program-Pad" H 5200 7500 50  0001 C CNN
+F 3 "~" H 5200 7500 50  0001 C CNN
+	1    5000 7500
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector:TestPoint TP-SCK1
 U 1 1 5E22AC5B
-P 4500 4000
-F 0 "TP-SCK1" V 4454 4188 50  0000 L CNN
-F 1 "TestPoint" V 4545 4188 50  0000 L CNN
-F 2 "footprints:Program-Pad" H 4700 4000 50  0001 C CNN
-F 3 "~" H 4700 4000 50  0001 C CNN
-	1    4500 4000
+P 5000 7000
+F 0 "TP-SCK1" V 4950 7200 50  0000 L CNN
+F 1 "TestPoint" V 5050 7200 50  0000 L CNN
+F 2 "footprints:Program-Pad" H 5200 7000 50  0001 C CNN
+F 3 "~" H 5200 7000 50  0001 C CNN
+	1    5000 7000
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:TestPoint TP-MOSI1
 U 1 1 5E22CBF0
-P 4500 4200
-F 0 "TP-MOSI1" V 4454 4388 50  0000 L CNN
-F 1 "TestPoint" V 4545 4388 50  0000 L CNN
-F 2 "" H 4700 4200 50  0001 C CNN
-F 3 "~" H 4700 4200 50  0001 C CNN
-	1    4500 4200
+P 6000 7000
+F 0 "TP-MOSI1" V 5950 7200 50  0000 L CNN
+F 1 "TestPoint" V 6050 7200 50  0000 L CNN
+F 2 "footprints:Program-Pad" H 6200 7000 50  0001 C CNN
+F 3 "~" H 6200 7000 50  0001 C CNN
+	1    6000 7000
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:TestPoint TP-MISO1
 U 1 1 5E22CEF6
-P 4500 4400
-F 0 "TP-MISO1" V 4454 4588 50  0000 L CNN
-F 1 "TestPoint" V 4545 4588 50  0000 L CNN
-F 2 "" H 4700 4400 50  0001 C CNN
-F 3 "~" H 4700 4400 50  0001 C CNN
-	1    4500 4400
+P 6000 7500
+F 0 "TP-MISO1" V 5950 7700 50  0000 L CNN
+F 1 "TestPoint" V 6050 7700 50  0000 L CNN
+F 2 "footprints:Program-Pad" H 6200 7500 50  0001 C CNN
+F 3 "~" H 6200 7500 50  0001 C CNN
+	1    6000 7500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3600 4100 4000 4100
-Text Label 4500 4000 2    50   ~ 0
+	3600 4100 4500 4100
+Text Label 5000 7000 2    50   ~ 0
 SCK
-Text Label 4500 4200 2    50   ~ 0
+Text Label 6000 7000 2    50   ~ 0
 MOSI
-Text Label 4500 4400 2    50   ~ 0
+Text Label 6000 7500 2    50   ~ 0
 MISO
+Text Label 5000 7500 2    50   ~ 0
+RESET
 Wire Wire Line
-	1500 4000 2400 4000
+	2000 4000 2400 4000
 $EndSCHEMATC
