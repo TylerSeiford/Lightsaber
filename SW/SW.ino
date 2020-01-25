@@ -5,7 +5,7 @@ constexpr uint8_t NUM_MODES = 6;
 constexpr uint8_t DELAY = 20;
 
 constexpr uint8_t ARGB_PIN = 4;
-constexpr uint8_t NUM_LEDS = 30;
+constexpr uint8_t NUM_LEDS = 60;
 
 CRGB leds[NUM_LEDS];
 uint8_t mode = NUM_MODES - 1;
@@ -19,18 +19,18 @@ void setup() {
 		leds[i] = CRGB::Black;
 	}
 	FastLED.show();
-  Serial.begin(9600);
+	//Serial.begin(9600);
 }
 
 void loop() {
-	Serial.print("Read: ");
+	//Serial.print("Read: ");
 	if (digitalRead(BTN_PIN) == LOW) {
-		Serial.print("L");
+		//Serial.print("L");
 		if (lastState == HIGH) {
 			lastState = LOW;
 			mode = (mode + 1) % NUM_MODES;
-			Serial.print("->H: ");
-			Serial.println(mode);
+			//Serial.print("->H: ");
+			//Serial.println(mode);
 
 			switch (mode) {
 			case 0:
@@ -82,9 +82,9 @@ void loop() {
 		}
 	}
 	else {
-		Serial.print("H");
+		//Serial.print("H");
 		if (lastState == LOW) {
-			Serial.println("->L");
+			//Serial.println("->L");
 			lastState = HIGH;
 			for (int i = NUM_LEDS - 1; i >= 0; i--) {
 				leds[i] = CRGB::Black;
