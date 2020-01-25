@@ -1,4 +1,4 @@
-update=1/10/2020 12:00:40 PM
+update=1/25/2020 4:27:35 PM
 version=1
 last_client=kicad
 [general]
@@ -12,6 +12,16 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=Exports/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -233,7 +243,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.25
+Clearance=0.125
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
@@ -244,7 +254,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=Power
-Clearance=0.25
+Clearance=0.125
 TrackWidth=1.5
 ViaDiameter=0.8
 ViaDrill=0.4
@@ -255,7 +265,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=Signal
-Clearance=0.25
+Clearance=0.125
 TrackWidth=0.375
 ViaDiameter=0.8
 ViaDrill=0.4
@@ -264,13 +274,3 @@ uViaDrill=0.1
 dPairWidth=0.25
 dPairGap=0.25
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=Exports/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
