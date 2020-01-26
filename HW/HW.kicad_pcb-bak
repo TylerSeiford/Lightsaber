@@ -17,8 +17,8 @@
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
-    (36 B.SilkS user)
-    (37 F.SilkS user)
+    (36 B.SilkS user hide)
+    (37 F.SilkS user hide)
     (38 B.Mask user hide)
     (39 F.Mask user hide)
     (40 Dwgs.User user hide)
@@ -903,7 +903,7 @@
     )
   )
 
-  (module footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5E07F17C) (tstamp 5E2A69D5)
+  (module footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5E07F17C) (tstamp 5E2CDB8F)
     (at 143.764 99.949)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
@@ -1272,7 +1272,7 @@
     )
   )
 
-  (gr_text "Lightsaber\nARGB Controller\nv0.1.4" (at 139.446 103.378) (layer B.SilkS) (tstamp 5E2B71D3)
+  (gr_text "Lightsaber\nARGB Controller\nv0.1.5" (at 139.446 103.378) (layer B.SilkS) (tstamp 5E2B71D3)
     (effects (font (size 2 2) (thickness 0.375)) (justify mirror))
   )
   (gr_poly (pts (xy 125.857 104.394) (xy 122.682 104.394) (xy 122.682 109.474) (xy 125.857 109.474)) (layer B.SilkS) (width 0.1) (tstamp 5E2A8D76))
