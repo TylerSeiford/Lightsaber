@@ -1272,7 +1272,7 @@
     )
   )
 
-  (gr_text "Lightsaber\nARGB Controller\nv0.1.5" (at 139.446 103.378) (layer B.SilkS) (tstamp 5E2B71D3)
+  (gr_text "Lightsaber\nARGB Controller\nv0.2.0" (at 139.446 103.378) (layer B.SilkS) (tstamp 5E2B71D3)
     (effects (font (size 2 2) (thickness 0.375)) (justify mirror))
   )
   (gr_poly (pts (xy 125.857 104.394) (xy 122.682 104.394) (xy 122.682 109.474) (xy 125.857 109.474)) (layer B.SilkS) (width 0.1) (tstamp 5E2A8D76))
