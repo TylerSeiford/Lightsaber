@@ -1,10 +1,18 @@
 #include <FastLED.h>
 
 constexpr uint8_t ARGB_PIN = 4;
-constexpr uint8_t NUM_LEDS = 144;
+constexpr uint8_t NUM_LEDS = 60;
 
 constexpr uint8_t BTN_PIN = 3;
-constexpr uint8_t NUM_MODES = 6;
+constexpr uint8_t NUM_MODES = 4;
+/*
+ * 1: Blue
+ * 2: Green
+ * 3: Red
+ * 4: Purple
+ * 5: Yellow
+ * 6: White
+ */
 constexpr uint8_t DELAY = (600 / NUM_LEDS);
 
 CRGB leds[NUM_LEDS];
@@ -66,14 +74,20 @@ void loop() {
 				break;
 			case 4:
 				for (int i = 0; i < NUM_LEDS; i++) {
-					leds[i] = CRGB::Yellow;
+					//leds[i] = CRGB::Yellow;
+					leds[i].r = 0x40;
+					leds[i].g = 0x40;
+					leds[i].b = 0x00;
 					FastLED.show();
 					FastLED.delay(DELAY);
 				}
 				break;
 			case 5:
 				for (int i = 0; i < NUM_LEDS; i++) {
-					leds[i] = CRGB::White;
+					//leds[i] = CRGB::White;
+					leds[i].r = 0x40;
+					leds[i].g = 0x40;
+					leds[i].b = 0x40;
 					FastLED.show();
 					FastLED.delay(DELAY);
 				}
